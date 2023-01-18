@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do While Loop - Javascript</title>
+    <script src="doWhile.js"></script>
+</head>
+
+<body>
+    <script>
+        let y = 10;
+        do {
+            y++; // menambahkan angka : y + 1, berarti = 1 + 1 hasilnya : 2
+            document.writeln(y); // menampilkan di web
+            // melakukan pengecekkan apakah kondisi tersebut dengan diatas bernilai benar atau salah, kalau bernilai benar maka akan menampilkan sampai dengan 20, apabila salah maka akan menampilkan 2
+        } while (y < 5);
+
+        let z = 10;
+        do {
+            z++; // menambahkan angka : y + 1, berarti = 1 + 1 hasilnya : 2
+            document.writeln(y); // menampilkan di web
+            // melakukan pengecekkan apakah kondisi tersebut dengan diatas bernilai benar atau salah, kalau bernilai benar maka akan menampilkan sampai dengan 15, apabila salah maka akan menampilkan 11
+        } while (y < 15);
+
+        let result = prompt('Masukkan angka : ');
+        do {
+            result++; // menambahkan angka + 1
+
+            // melakukan pengecekkan apabila hasil inputannya bisa dibagi 2 maka akan menampilkan bilangan genap jika tidak akan menampilkan bilangan ganjil
+            if (result % 2 === 0) {
+                document.writeln(`<p>${result} adalah bilangan genap</p>`)
+            } else {
+                document.writeln(`<p>${result} adalah bilangan ganjil</p>`);
+            }
+            // batasan cetak sampai 20 , misal ketika anda melakukan input angka yaitu : 13, maka output akan menampilkan 14 bilangan genap, 15 bilangan ganjil sampai dengan 20
+        } while (result < 20);
+    </script>
+
+</body>
+
+</html>
